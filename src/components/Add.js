@@ -1,5 +1,6 @@
 import React from 'react';
 import Items from './Items';
+import './Items.css';
 
 class Add extends React.Component {
     constructor(props) {
@@ -31,7 +32,7 @@ class Add extends React.Component {
     render() {
         return (
             <div className="ListMain">
-                <div className="heading">
+                <div className="header">
                     <form onSubmit={this.addItem}>
                         <input ref={(e) => this.inputElement = e} placeholder="enter item"></input>
                         <button type="submit">Add</button>
